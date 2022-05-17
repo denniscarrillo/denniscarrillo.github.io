@@ -1,0 +1,135 @@
+/* VARIABLES */
+:root {
+    --color-orange: #d18829;
+    --color-whitepink: #a99a97;
+    --color-blackgray: #1c1c1d;
+    --color-blackTransparent: #111111cb;
+}
+
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+} 
+
+body {
+    min-height: 100vh;
+    background-image: url("/./Multimedia/Slider/Tecalado2.jpg");
+    background-repeat: round;
+    background-size: contain;
+}   
+
+.header-conteiner {
+    background-color: var(--color-blackgray);
+    min-width: 100%;
+}
+
+/* Propiedad flexbox: Contenedor elementos header */
+.header_class {
+    min-height: 6rem;
+    max-width: 1500px;
+    margin: 0 auto; /*Centramos el elemento*/
+}
+
+.nav-class {
+    display: flex;
+    background-color: #222424ee;
+    justify-items: center;
+    align-items: center;
+    min-height: 3rem;
+}
+
+.nav-flex-item {
+    max-width: 1500px;
+    margin: 0 auto; /*Centramos el elemento*/
+}
+
+/* Propiedad flexbox: Contenedor de links */
+.items-nav-menu {
+    display: flex;
+    align-items: center; 
+    justify-items: center; 
+    list-style: none;
+    height: inherit;
+    flex-wrap: wrap;
+}
+
+.items-nav-menu li {
+    height: 3rem;
+    min-height: inherit;
+    line-height: 3rem;
+}
+
+.items-nav-menu li  {
+    padding-left: 15px;
+}
+
+/* Propiedades de los links del menu */
+.item {
+    padding: 5px 20px 0px 5px;
+    text-decoration: none;
+    color: #d18829;
+    font-family: Segoe UI;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.items-nav-menu li:hover {
+    background-color: #eaece434;
+    transform: translateY(-1%);
+    transition: all 900ms ease;
+}
+
+.fa-house, .fa-code, .fa-book, .fa-circle-info {
+    font-size: 20px;
+    color: #d18829;
+    padding-right: 2px;
+}
+
+/* Propiedades del contenedor "div" del logo */
+.logo-frase  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    order: -1;
+    padding-left: 1rem;
+}
+
+/* Propiedades de la imagen del logo */
+.logo-frase img {
+    max-width: 300px;
+    min-height: 80px;
+    object-fit: cover;
+}
+
+.logo-frase h1 {
+    color: #a99a97;
+    font-family: 'Karla';
+    font-size: 30px;
+    font-style: italic;
+    /* display: flex; */
+    text-align: right;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    overflow:hidden;
+}
+
+
+.conteiner-footer {
+    min-height: 100px;
+    background-color: var(--color-orange);
+}
+
+/* Contenido de la pagina */
+.main-conteiner {
+    position: relative;
+}
+/* Boton regresar al top del sitio */
+.fa-circle-chevron-up {
+    position: fixed;
+    bottom: 15px;
+    left: 95%;
+    color: whitesmoke;
+    font-size: 60px;
+    z-index: 8;
+}
+

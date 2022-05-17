@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Incrustados -->
+    <link rel="icon" href="/./Multimedia/LOGO-InformaTECHN1.png" />
+    <link rel="stylesheet" href="/./CodigoFuente/Css/index.css" />
+    <link rel="stylesheet" href="/./CodigoFuente/Css/sliderStyle.css"/>
+    <link rel="stylesheet" href="/./CodigoFuente/Css/stylesCards.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuentes de google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;1,200&display=swap" rel="stylesheet"> 
+  
+    <!-- Scripts -->
+    <script defer src="https://kit.fontawesome.com/2317ff25a4.js" crossorigin="anonymous"></script>
+    <script defer src="/./CodigoFuente/JavaScript/SliderFunctions.js"></script>
+    <!-- Titulo de la pagina principal -->
+    <title>InfoTecHn</title>
+  </head>
+  <body>
+    <!-- Cabecera del sitio web -->
+    <div class="header-conteiner">
+      <header class="header_class" id="site-top">
+        <!-- Contenedor del logo -->
+        <div class="logo-frase">
+          <img src="/./Multimedia/LOGO-InformaTECHN.png"  alt = "Logo de la web"/>
+          <h1>"Si puedes imaginarlo, puedes programarlo"<br>-Progamacion ATS</br></h1>
+        </div>
+      </header>
+      <!-- Contenedor barra de navegacion -->
+      <div class="nav-class">
+        <nav class="nav-flex-item">
+          <ul class="items-nav-menu">
+            <li>
+              <i class="fa-solid fa-house"></i
+              ><a class="item" href="#">Inicio</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-code"></i
+              ><a class="item" href="#">Tecnologías</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-book"></i
+              ><a class="item" href="#">Conocimientos</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-info"></i
+              ><a class="item" href="#">Sobre mí</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Cuerpo del sitio -->
+    <main class="main-conteiner">
+      <!-- Top-boton para regresar el principio -->
+      <a href="#site-top""><i class="fa-solid fa-circle-chevron-up"></i></a>
+      <!-- Slider Principal -->
+      <section id="container-slider">	
+        <div class="conteiner-botones">
+          <div class="btn-next-back">
+            <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fa-solid fa-angle-left"></i></a>
+            <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+
+        <ul class="listslider">
+          <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+          <li><a itlist="itList_2" href="#"></a></li>
+        </ul>
+        <ul id="slider">
+          <!-- 1 -->
+          <li style="background-image: url('/./Multimedia/Slider/Tecalado1.jpg'); z-index:0; opacity: 1;">
+          </li>
+          <!-- 2 -->
+          <li style="background-image: url('/./Multimedia/Slider/billeteraMesadark.jpg'); ">
+          </li>
+        </ul> 
+      </section>
+      <!-- Contenido de Slider bienvenida -->
+      <section class="content-bienvenida">
+        <p id="slider-text">
+          <span >¡Bienvenido, es un placer tenerte aquí!</span>
+        </p>
+        <p class="mensaje-bienvenida">
+          Esta es la primera versión de mi sitio web, <br>
+          te invito a que sigas explorando, he dejado <br>
+          enlaces a cada sección de mi sitio <br>
+          para que te sea más fácil explorarlo.<br>¡Adelante!  
+        </P>
+        <a href="#header-text-cards" class="btn-header-text-cards">
+          <i class="fa-solid fa-circle-arrow-down"></i>
+        </a>       
+      </section> 
+      <!-- Contenido de la pagina -->
+      <section id="header-text-cards">
+        <p>
+          Conoce más sobre ésta web
+        </p>
+      </section>
+        <!-- Tarjetas de enlace y resumenes -->
+        <div class="conteiner-cards">
+          <div class="cards-items">
+            <!-- Tarjeta 1 -->
+              <section class="cards">
+                <img class="img-card1"src="/./Multimedia/Cards/Habilidades.jpg" alt="Habilidades">
+                <h3>Habilidades</h3>
+                <p class="cards_text">
+                  “Tecnología” viene del griego τέχνη (se pronuncia “téchnē”) y quiere decir arte,
+                  oficio o destreza. Por lo tanto, la tecnología no es una cosa sino un proceso,
+                  una capacidad de transformar o combinar algo ya existente para construir
+                  algo nuevo o bien darle otra función.
+                </p>  
+                <button class="btn-card">
+                  Leer más
+                </button>
+              </section>
+               <!-- Tarjeta 2 -->
+              <section class="cards">
+                <img class="img-card1"src="/./Multimedia/Cards/Tecnologia.jpg" alt="Tecnologías">
+                <h3>Tecnologías</h3>
+                <p class="cards_text">
+                  “Tecnología” viene del griego τέχνη (se pronuncia “téchnē”) y quiere decir arte,
+                  oficio o destreza. Por lo tanto, la tecnología no es una cosa sino un proceso,
+                  una capacidad de transformar o combinar algo ya existente para construir
+                  algo nuevo o bien darle otra función.
+                </p>  
+                <button class="btn-card">
+                  Leer más
+                </button>
+              </section>
+               <!-- Tarjeta 3 -->
+              <section class="cards">
+                <img class="img-card1"src="/./Multimedia/Cards/Estudios.png" alt="Estudios">
+                <h3>Estudios</h3>
+                <p class="cards_text">
+                  “Tecnología” viene del griego τέχνη (se pronuncia “téchnē”) y quiere decir arte,
+                  oficio o destreza. Por lo tanto, la tecnología no es una cosa sino un proceso,
+                  una capacidad de transformar o combinar algo ya existente para construir
+                  algo nuevo o bien darle otra función.
+                </p> 
+                <button class="btn-card">
+                  Leer más
+                </button>
+              </section>
+               <!-- Tarjeta 4 -->
+               <section class="cards">
+                <img class="img-card1"src="/./Multimedia/Cards/bombilla.jpg" alt="bombilla">
+                <h3>Otros intereses</h3>
+                <p class="cards_text">
+                  “Tecnología” viene del griego τέχνη (se pronuncia “téchnē”) y quiere decir arte,
+                  oficio o destreza. Por lo tanto, la tecnología no es una cosa sino un proceso,
+                  una capacidad de transformar o combinar algo ya existente para construir
+                  algo nuevo o bien darle otra función.
+                </p>  
+                <button class="btn-card">
+                  Leer más
+                </button>
+              </section>
+          </div>
+        </div>
+        <!-- Barra de anuncios -->
+        <!-- <aside class="Conteiner-aside">
+        </aside> -->
+
+      <!-- Pie de pagina -->
+      <footer class="conteiner-footer">
+        <div class="footer-content">
+
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
