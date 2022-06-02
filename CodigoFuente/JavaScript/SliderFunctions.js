@@ -31,7 +31,7 @@ if(document.querySelector('#container-slider')){
      if(side == 'prev' || side == 'next'){
  
          if(side=="prev"){
-             nextElement = (curElement == 0)?elements.length -1:curElement -1;
+             nextElement = (curElement == 0)?elements.length -1:curElement -1; // if/else en linea
          }else{
              nextElement = (curElement == elements.length -1)?0:curElement +1;
          }
@@ -44,6 +44,7 @@ if(document.querySelector('#container-slider')){
      let elementSel = document.getElementsByClassName("listslider")[0].getElementsByTagName("a");
      elementSel[curElement].classList.remove("item-select-slid");
      elementSel[nextElement].classList.add("item-select-slid");
+     //Estilos Css
      elements[curElement].style.opacity=0;
      elements[curElement].style.zIndex =0;
      elements[nextElement].style.opacity=1;
